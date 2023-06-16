@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <title>ユーザー登録</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .header, .footer {
+            width: 100%;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: start;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #075577;
+        }
+
+        .footer {
+            background-color: #1F1F1F;
+            justify-content: center;
+        }
+
+        .header img {
+            margin-right: 10px;
+        }
+
+        .header h1 {
+            font-weight: bold;
+        }
+
+        form {
+            width: 300px;
+        }
+
+        h1 {
+            font-size: 23px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            align-items: top;
+        }
+
+        label {
+            font-size: 12px;
+            font-weight: bold;
+            text-align: left;
+            padding-top: 3px;
+            width: 60%;
+            height: 50px;
+        }
+
+        input[type=text], input[type=password], input[type=email] {
+            width: 65%;
+            text-align: left;
+            margin-bottom: 20px;
+            height: 15px;
+            background-color: #EDEDED;
+        }
+
+        input[type=button], input[type=submit] {
+            background-color: #0c5474;
+            color: white;
+            font-size: 14px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 45%;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header{
+        height: 50px; /* アイコンの大きさを調整 アイコンを正しく表示するために必要 */
+        }
+        
+        .scheduler-title {
+        margin-top: 8px; /* 上方向に10px移動させる。必要に応じて値を調整 */
+        font-family: 'Noto Sans JP', sans-serif;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="header">
+        <img src="img/logo.png" alt="ロゴ"> 
+        <h1 class="scheduler-title"> Road Study Scheduler</h1>
+    </div>
+
+    <form>
+        <h1>ユーザー登録</h1>
+
+        <div class="form-group">
+            <label for="name">名前</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="password">パスワード</label>
+            <input type="password" id="password" name="password" pattern="[A-Za-z0-9]+">
+        </div>
+
+        <div class="form-group">
+            <label for="confirm-password">パスワード確認用</label>
+            <input type="password" id="confirm-password" name="confirm-password" pattern="[A-Za-z0-9]+">
+        </div>
+
+        <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="confirm-email">メールアドレス確認用</label>
+            <input type="email" id="confirm-email" name="confirm-email">
+        </div>
+
+        <div class="button-group">
+            <input type="button" value="戻る" style="margin-right: 100px;">
+            <input type="submit" value="保存">
+        </div>
+    </form>
+
+    <div class="footer">
+        <p>© HOGEHOGE All Rights Reserved</p>
+    </div>
+</body>
+</html> 
