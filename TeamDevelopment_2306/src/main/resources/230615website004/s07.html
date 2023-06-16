@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>RSS Sutdy Hours Edit</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="flex">
+            <img class="logo" src="img/logo.png" width="50" height="50" alt="RSSのロゴマーク">
+            <h1>Road Study Scheduler</h1>
+            <label class="header-menu-btn" for="header-menu-btn-check" >
+                <div class="profile-button flex">
+                    <img class="user-icon" src="img/userIcon.png" width ="40" height="40" alt="ユーザーアイコン">
+                    <p class="user-name">YAMADA TARO</p>
+                </div>
+            </label>
+            <input type="checkbox" id="header-menu-btn-check">
+            <nav class="header-menu">
+                <ul>
+                    <li><a>ユーザー編集・削除</a></li>
+                    <li><a>ユーザー一覧</a></li>
+                    <li><a>学習時間登録</a></li>
+                    <li><a>学習時間登録編集・削除</a></li>
+                    <li><a>ログアウト</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-study-hours-edit">
+            <div class="wrap-local">
+                <section>
+                <!-- メインコンテンツ記述 -->
+                    <h2>学習時間登録編集・削除</h2>
+                    <p class="month-select-button">4月</p>
+                    <div class="study-hours-list-april">
+                        <div class="study-hours-list-box flex">
+                            <div class="study-hours-list-item-name">
+                                <p class="day-name">日にち</p>
+                                <p class="taeget-time-name">目標時間</p>
+                                <p class="execution-time-name">実施時間</p>
+                                <p class="study-hours-edit-button-name">編集</p>
+                            </div>
+                            <ol class="study-hours-list flex">
+                                <li class="study-hours-list-item">
+                                    <p class="day">1</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day1">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">2</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day2">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">3</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day3">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">4</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day4">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">5</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day5">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">6</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day6">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">7</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day7">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">8</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day8">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">9</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day9">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">10</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day10">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">11</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day11">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">12</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day12">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">13</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day13">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">14</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day14">編集</a>
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="study-hours-list-box flex">
+                            <div class="study-hours-list-item-name">
+                                <p class="day-name">日にち</p>
+                                <p class="taeget-time-name">目標時間</p>
+                                <p class="execution-time-name">実施時間</p>
+                                <p class="study-hours-edit-button-name">編集</p>
+                            </div>
+                            <ol class="study-hours-list flex">
+                                <li class="study-hours-list-item">
+                                    <p class="day">15</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day15">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">16</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day16">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">17</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day17">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">18</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day18">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">19</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day19">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">20</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day20">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">21</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day21">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">22</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day22">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">23</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day23">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">24</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day24">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">25</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day25">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">26</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day26">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">27</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day27">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">28</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day28">編集</a>
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="study-hours-list-box flex">
+                            <div class="study-hours-list-item-name">
+                                <p class="day-name">日にち</p>
+                                <p class="taeget-time-name">目標時間</p>
+                                <p class="execution-time-name">実施時間</p>
+                                <p class="study-hours-edit-button-name">編集</p>
+                            </div>
+                            <ol class="study-hours-list flex">
+                                <li class="study-hours-list-item">
+                                    <p class="day">29</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day29">編集</a>
+                                    </p>
+                                </li>
+                                <li class="study-hours-list-item">
+                                    <p class="day">30</p>
+                                    <p class="taeget-time">2h</p>
+                                    <p class="execution-time">3h</p>
+                                    <p class="study-hours-edit-button">
+                                        <a href="#study-hours-edit-april-box-day30">編集</a>
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="study-hours-edit-april">
+                        <form class="study-hours-edit-april-form">
+                            <div class="study-hours-edit-april-box">
+                                <div id="study-hours-edit-april-box-day1">
+                                    <h3>4月1日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-01">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-01" id="target-time-2023-04-01" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-01">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-01" id="execution-time-2023-04-01" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-01">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-01" id="note-2023-04-01">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day2">
+                                    <h3>4月2日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-02">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-02" id="target-time-2023-04-02" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-01">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-02" id="execution-time-2023-04-02" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-02">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-02" id="note-2023-04-02">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day3">
+                                    <h3>4月3日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-03">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-03" id="target-time-2023-04-03" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-03">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-03" id="execution-time-2023-04-03" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-03">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-03" id="note-2023-04-03">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day4">
+                                    <h3>4月4日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-04">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-04" id="target-time-2023-04-04" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-04">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-04" id="execution-time-2023-04-04" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-04">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-04" id="note-2023-04-04">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day5">
+                                    <h3>4月5日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-05">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-05" id="target-time-2023-04-05" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-05">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-05" id="execution-time-2023-04-05" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-05">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-05" id="note-2023-04-05">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day6">
+                                    <h3>4月6日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-06">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-06" id="target-time-2023-04-06" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-06">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-06" id="execution-time-2023-04-06" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-06">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-06" id="note-2023-04-06">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day7">
+                                    <h3>4月7日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-07">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-07" id="target-time-2023-04-07" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-07">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-07" id="execution-time-2023-04-07" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-07">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-07" id="note-2023-04-07">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day8">
+                                    <h3>4月8日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-08">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-08" id="target-time-2023-04-08" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-08">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-08" id="execution-time-2023-04-08" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-08">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-08" id="note-2023-04-08">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day9">
+                                    <h3>4月9日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-09">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-09" id="target-time-2023-04-09" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-09">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-09" id="execution-time-2023-04-09" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-09">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-09" id="note-2023-04-09">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day10">
+                                    <h3>4月10日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-10">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-10" id="target-time-2023-04-10" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-10">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-10" id="execution-time-2023-04-10" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-10">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-10" id="note-2023-04-10">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day11">
+                                    <h3>4月11日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-11">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-11" id="target-time-2023-04-11" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-11">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-11" id="execution-time-2023-04-11" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-11">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-11" id="note-2023-04-11">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day12">
+                                    <h3>4月12日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-12">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-12" id="target-time-2023-04-12" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-12">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-12" id="execution-time-2023-04-12" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-12">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-12" id="note-2023-04-12">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day13">
+                                    <h3>4月13日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-13">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-13" id="target-time-2023-04-13" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-13">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-13" id="execution-time-2023-04-13" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-13">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-13" id="note-2023-04-13">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day14">
+                                    <h3>4月14日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-14">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-14" id="target-time-2023-04-14" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-14">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-14" id="execution-time-2023-04-14" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-14">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-14" id="note-2023-04-14">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day15">
+                                    <h3>4月15日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-15">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-15" id="target-time-2023-04-15" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-15">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-15" id="execution-time-2023-04-15" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-15">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-15" id="note-2023-04-15">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day16">
+                                    <h3>4月16日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-16">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-16" id="target-time-2023-04-16" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-16">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-16" id="execution-time-2023-04-16" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-16">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-16" id="note-2023-04-16">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day17">
+                                    <h3>4月17日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-17">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-17" id="target-time-2023-04-17" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-17">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-17" id="execution-time-2023-04-17" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-17">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-17" id="note-2023-04-17">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day18">
+                                    <h3>4月18日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-18">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-18" id="target-time-2023-04-18" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-18">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-18" id="execution-time-2023-04-18" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-18">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-18" id="note-2023-04-18">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day19">
+                                    <h3>4月19日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-19">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-19" id="target-time-2023-04-19" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-19">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-19" id="execution-time-2023-04-19" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-19">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-19" id="note-2023-04-19">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day20">
+                                    <h3>4月20日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-20">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-20" id="target-time-2023-04-20" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-20">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-20" id="execution-time-2023-04-20" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-20">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-20" id="note-2023-04-20">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day21">
+                                    <h3>4月21日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-21">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-21" id="target-time-2023-04-21" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-21">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-21" id="execution-time-2023-04-21" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-21">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-21" id="note-2023-04-21">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day22">
+                                    <h3>4月22日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-22">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-22" id="target-time-2023-04-22" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-22">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-22" id="execution-time-2023-04-22" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-22">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-22" id="note-2023-04-22">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day23">
+                                    <h3>4月23日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-23">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-23" id="target-time-2023-04-23" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-23">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-23" id="execution-time-2023-04-23" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-23">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-23" id="note-2023-04-23">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day24">
+                                    <h3>4月24日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-24">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-24" id="target-time-2023-04-24" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-24">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-24" id="execution-time-2023-04-24" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-24">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-24" id="note-2023-04-24">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day25">
+                                    <h3>4月25日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-25">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-25" id="target-time-2023-04-25" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-25">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-25" id="execution-time-2023-04-25" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-25">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-25" id="note-2023-04-25">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day26">
+                                    <h3>4月26日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-26">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-26" id="target-time-2023-04-26" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-26">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-26" id="execution-time-2023-04-26" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-26">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-26" id="note-2023-04-26">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day27">
+                                    <h3>4月27日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-27">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-27" id="target-time-2023-04-27" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-27">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-27" id="execution-time-2023-04-27" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-27">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-27" id="note-2023-04-27">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day28">
+                                    <h3>4月28日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-28">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-28" id="target-time-2023-04-28" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-28">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-28" id="execution-time-2023-04-28" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-28">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-28" id="note-2023-04-28">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day29">
+                                    <h3>4月29日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-29">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-29" id="target-time-2023-04-29" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-29">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-29" id="execution-time-2023-04-29" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-29">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-29" id="note-2023-04-29">
+                                    </div>
+                                </div>
+                                <div id="study-hours-edit-april-box-day30">
+                                    <h3>4月30日</h3>
+                                    <div class="flex">
+                                        <div class="target-time-item">
+                                            <label class="target-time-label" for="target-time-2023-04-30">目標時間</label>
+                                            <input class="target-time-input" type="number" name="target-time-2023-04-30" id="target-time-2023-04-30" value="2">
+                                        </div>
+                                        <div class="execution-time-item">
+                                            <label class="execution-time-label" for="execution-time-2023-04-30">実施時間</label>
+                                            <input class="execution-time-input" type="number" name="execution-time-2023-04-30" id="execution-time-2023-04-30" value="3">
+                                        </div>
+                                    </div>
+                                    <div class="note-item">
+                                        <label class="note-label" for="note-2023-04-30">備考</label>
+                                        <input class="note-input" type="text" name="note-2023-04-30" id="note-2023-04-30">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-button-item flex">
+                                <input class="form-button-reset" type="reset" value="削除">
+                                <input class="form-button-return" type="button" onclick="history.back()" value="保存せずに戻る">
+                                <input  class="form-button-submit" type="submit" value="保存">
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p class="copyright">
+                <small>&copy; HOGEHOGE All Rights Reserved</small>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
