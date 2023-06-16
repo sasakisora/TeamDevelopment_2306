@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>学習時間一覧</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <style>
+        .table {
+            width: 640px;
+        }
+
+        .study-date, .study-goal, .sutdy-time, .achievement {
+            width: 130px;
+            text-align: center;
+        }
+
+        .handling {
+            width: 150px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        h1 {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="img/logo.png" alt="ロゴ"> 
+        <h1 class="scheduler-title">Road Study Scheduler</h1>
+
+        <div class="user-info">
+            <img src="img/icon.png" alt="ユーザーアイコン">
+            <span class="username">ユーザー名</span>
+        </div>
+    </div>
+
+    <h2>プロフィール</h2>
+
+    <header>
+        <h1 class="title">学習時間一覧</h1>
+        <div class="month-nav">
+            <h2 class="month">対象の月</h2>
+            <div class="buttons">
+                <button class="prev">前の月</button>
+                <span>|</span>
+                <button class="next">次の月</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <table class="table">
+            <tr>
+                <th class="study-date">学習日</th>
+                <th class="study-goal">目標時間</th>
+                <th class="sutdy-time">実施時間</th>
+                <th class="achievement">達成率</th>
+                <th class="handling">操作</th>
+            </tr>
+            <!-- 日付の行を追加する -->
+            <!-- 例： -->
+            <tr>
+                <td class="study-date">2023-06-01</td>
+                <td class="study-goal">5</td>
+                <td class="sutdy-time">4</td>
+                <td class="achievement">80%</td>
+                <td class="handling">
+                    <button class="edit">編集</button>
+                    <button class="delete">削除</button>
+                </td>
+            </tr>
+        </table>
+    <div class="button-group">
+        <button class="edit-user">ユーザー編集・削除</button>
+        <button class="ranking">ランキング</button>
+    </div>
+    <div class="logout-section">
+        <button class="logout">ログアウト</button>
+    </div>
+    </main>
+
+    <div class="footer">
+        <p>© HOGEHOGE All Rights Reserved</p>
