@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 30px;
+    text-decoration: underline;
+
+}
+
+.month {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.buttons button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+}
+
+table th {
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #EDEDED;
+}
+
+.logout {
+    display: block;
+    margin: 0 auto;
+    background-color: #075577;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.header, .footer {
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+}
+
+.header {
+    background-color: #075577;
+}
+
+.footer {
+    background-color: #1F1F1F;
+    justify-content: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.user-info img {
+    height: 50px; /* アイコンの大きさを調整 */
+    margin-right: 10px; /* アイコンとユーザー名の間のマージンを調整 */
+}
+
+.user-info .username {
+    color: #FFFFFF;
+    font-size: 14px;
+    padding-right: 40px;
+}
+
+.header{
+    height: 50px; /* アイコンの大きさを調整 アイコンを正しく表示するために必要 */
+}
+
+h1 {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.header img {
+    margin-right: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.logout-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+}
+
+.edit-user, .register-user, .ranking, .logout {
+    margin: 0 10px;
+    width: 140px;
+    height: 35px;
+    cursor: pointer;
+}
+
+table th:last-child, 
+table td:last-child {
+    width: 150px;
+}
+
+button.edit, 
+button.delete {
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.scheduler-title {
+    margin-top: 9px; /* 上方向に10px移動させる。必要に応じて値を調整 */
+}
