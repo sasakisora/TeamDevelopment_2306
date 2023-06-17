@@ -1,0 +1,288 @@
+@charset "UTF-8";
+img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  vertical-align: baseline;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.wrap-local {
+  margin: 0 auto;
+  padding: 60px 20px;
+  max-width: 1300px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 3.2rem;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*headerの記述開始*/
+header {
+  padding: 0 20px;
+  height: 80px;
+  background-color: #075577;
+  justify-content: left;
+}
+header .logo {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+header .header-menu-btn {
+  margin-left: auto;
+}
+header .header-menu-btn .profile-button {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ffffff;
+}
+header .header-menu-btn .profile-button .user-icon {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+header .header-menu-btn .profile-button .user-name {
+  color: #ffffff;
+  font-size: 2rem;
+}
+header #header-menu-btn-check {
+  display: none;
+}
+header #header-menu-btn-check:checked ~ .header-menu {
+  display: block;
+}
+header .header-menu {
+  display: none;
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  z-index: 100;
+  width: 240px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+header .header-menu ul {
+  padding: 20px;
+}
+header .header-menu ul li a {
+  display: block;
+  width: 100%;
+  line-height: 2;
+  text-align: center;
+  font-size: 1.6rem;
+  text-align: center;
+  border-bottom: 1px solid #1f1f1f;
+  position: relative;
+}
+header .header-menu ul li:last-child {
+  text-align: center;
+}
+header .header-menu ul li:last-child a {
+  display: inline-block;
+  margin: 20px 10px 0;
+  padding: 5px 20px;
+  width: fit-content;
+  color: #ffffff;
+  border-bottom: 0px solid #1f1f1f;
+  border-radius: 4px;
+  background-color: #b0b0b0;
+}
+
+/*headerの記述終了*/
+/*mainの記述開始*/
+.main-user-list {
+  background-color: #f0f0f0;
+}
+.main-user-list section h2 {
+  margin: 0 0 20px 0;
+}
+.main-user-list section .sort-button {
+  position: relative;
+  display: block;
+  margin: 0 0 10px auto;
+  padding: 0 0 0 2rem;
+  width: fit-content;
+  font-size: 2rem;
+  border-bottom: 1px solid #1f1f1f;
+}
+.main-user-list section .sort-button::before {
+  position: absolute;
+  top: 0.6rem;
+  left: 0;
+  content: "";
+  border-top: 17.32px solid #1f1f1f;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+.main-user-list section .user-list-item-data-name {
+  margin: 0 0 4px 0;
+  padding: 0 10px;
+  background-color: #1f1f1f;
+}
+.main-user-list section .user-list-item-data-name p {
+  width: 18%;
+  line-height: 1.6;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ffffff;
+}
+.main-user-list section .user-list-item-data-name p:first-child {
+  width: 28%;
+}
+.main-user-list section .user-list {
+  margin: 0 0 20px 0;
+}
+.main-user-list section .user-list .user-list-item {
+  margin: 0 0 4px 0;
+}
+.main-user-list section .user-list .user-list-item:last-child {
+  margin: 0;
+}
+.main-user-list section .user-list .user-list-item .user-list-item-data {
+  padding: 0 10px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+.main-user-list section .user-list .user-list-item .user-list-item-data p {
+  width: 18%;
+  line-height: 1.6;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #1f1f1f;
+}
+.main-user-list section .user-list .user-list-item .user-list-item-data p:first-child {
+  width: 28%;
+}
+.main-user-list section .page-number {
+  justify-content: center;
+}
+.main-user-list section .page-number .page-number-button-prev {
+  margin: 0 20px 0 0;
+  width: fit-content;
+  font-size: 1.6rem;
+  color: #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
+}
+.main-user-list section .page-number .page-number-list {
+  margin: 0 20px 0 0;
+  padding: 0 10px;
+}
+.main-user-list section .page-number .page-number-list .page-number-list-item {
+  margin: 0 10px 0 0;
+  width: fit-content;
+  font-size: 1.6rem;
+  color: #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
+}
+.main-user-list section .page-number .page-number-list .page-number-list-item:last-child {
+  margin: 0;
+}
+.main-user-list section .page-number .page-number-button-next {
+  width: fit-content;
+  font-size: 1.6rem;
+  color: #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.main-study-edit {
+  background-color: #f0f0f0;
+}
+.main-study-edit section h2 {
+  margin: 0 0 10px 0;
+}
+.main-study-edit section .study-time-edit-form .study-time-edit-form-box {
+  margin: 0 auto 20px;
+}
+.main-study-edit section .study-time-edit-form .study-time-edit-form-box .form-item {
+  margin: 0 0 10px;
+  justify-content: left;
+}
+.main-study-edit section .study-time-edit-form .study-time-edit-form-box .form-item:last-child {
+  margin: 0 auto 0;
+}
+.main-study-edit section .study-time-edit-form .study-time-edit-form-box .form-item label {
+  width: 100%;
+  max-width: 120px;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
+.main-study-edit section .study-time-edit-form .study-time-edit-form-box .form-item input {
+  margin: 0 0 0 10px;
+  max-width: 160px;
+  width: 80%;
+  background-color: #fff;
+}
+.main-study-edit section .study-time-edit-form .study-time-edit-form-box .form-item textarea {
+  margin: 0 0 0 10px;
+  max-width: 400px;
+  width: 80%;
+  height: 100px;
+  background-color: #fff;
+}
+.main-study-edit section .study-time-edit-form .form-button-item {
+  justify-content: center;
+}
+.main-study-edit section .study-time-edit-form .form-button-item .form-button-return {
+  margin: 0 40px 0 0;
+  padding: 0 20px;
+  line-height: 1.8;
+  font-size: 1.6rem;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #b0b0b0;
+}
+.main-study-edit section .study-time-edit-form .form-button-item .form-button-submit {
+  margin: 0;
+  padding: 0 20px;
+  line-height: 1.8;
+  font-size: 1.6rem;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #075577;
+}
+
+/*mainの記述終了*/
+/*footerの記述開始*/
+footer {
+  height: 80px;
+  background-color: #1f1f1f;
+}
+footer .copyright {
+  text-align: center;
+  line-height: 8rem;
+}
+footer small {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+/*footerの記述終了*/
+/* 
+@media(hover: hover){
+}
+@media screen and (max-width: px) {
+} 
+*//*# sourceMappingURL=style.css.map */
