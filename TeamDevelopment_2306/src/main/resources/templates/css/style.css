@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+img{
+    width: 100px;
+    height: auto;
+}
+
+header{
+    margin: 40px 0 20px 0;
+}
+
+body{
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo-text{
+    overflow:  hidden;
+    height: 100px;
+    width: 430px;
+    margin: 0 auto;
+}
+
+.logo{
+    float: left;
+}
+
+.logo-p{
+    color: #fea72a;
+    float: left;
+    margin-top: 35px;
+    margin-left: 10px;
+    font-size: 1.7em;
+    text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000,
+    -1px 1px 0 #000000, 1px -1px 0 #000000,
+    0px 1px 0 #000000,  0-1px 0 #000000,
+    -1px 0 0 #000000, 1px 0 0 #000000;;
+}
+
+main{
+    position: relative;
+}
+
+.base1{
+    background-color: #075577;
+    width: 400px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 30px 20px 315px 20px;
+    border-radius: 30px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0px auto;
+}
+
+h1{
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.login-items{
+    padding: 10px;
+    line-height: 1;
+    margin-top: 15px;
+    border-radius: 50px;
+    text-align: center;
+    border-color: #ffffff;
+    font-size: 1.1em;
+}
+
+.login-items2{
+    padding: 10px;
+    line-height: 1;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    text-align: center;
+    border-color: #fea72a;
+    font-size: 1.1em;
+}
+
+.new-btn{
+    width: 180px;
+    margin: 15px auto;
+    color: #ffffff;
+    border-bottom: solid #ffffff 1px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.login-btn{
+    color: #fff;
+    background-color: #fea72a;
+    border-radius: 50px;
+    padding: 10px 40px 10px 40px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+}
