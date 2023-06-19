@@ -1,0 +1,406 @@
+@charset "UTF-8";
+img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  vertical-align: baseline;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.wrap-local {
+  margin: 0 auto;
+  padding: 60px 20px;
+  max-width: 1300px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 3.2rem;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*headerの記述開始*/
+header {
+  padding: 0 20px;
+  height: 80px;
+  background-color: #075577;
+  justify-content: left;
+}
+header .logo {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+header .header-menu-btn {
+  margin-left: auto;
+}
+header .header-menu-btn .profile-button {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ffffff;
+}
+header .header-menu-btn .profile-button .user-icon {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+header .header-menu-btn .profile-button .user-name {
+  color: #ffffff;
+  font-size: 2rem;
+}
+header #header-menu-btn-check {
+  display: none;
+}
+header #header-menu-btn-check:checked ~ .header-menu {
+  display: block;
+}
+header .header-menu {
+  display: none;
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  z-index: 100;
+  width: 240px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+header .header-menu ul {
+  padding: 20px;
+}
+header .header-menu ul li a {
+  display: block;
+  width: 100%;
+  line-height: 2;
+  text-align: center;
+  font-size: 1.6rem;
+  text-align: center;
+  border-bottom: 1px solid #1f1f1f;
+  position: relative;
+}
+header .header-menu ul li:last-child {
+  text-align: center;
+}
+header .header-menu ul li:last-child a {
+  display: inline-block;
+  margin: 20px 10px 0;
+  padding: 5px 20px;
+  width: fit-content;
+  color: #ffffff;
+  border-bottom: 0px solid #1f1f1f;
+  border-radius: 4px;
+  background-color: #b0b0b0;
+}
+
+/*headerの記述終了*/
+/*mainの記述開始*/
+.main-user-list {
+  background-color: #f0f0f0;
+}
+.main-user-list section h2 {
+  margin: 0 0 20px 0;
+}
+.main-user-list section .sort-button {
+  position: relative;
+  display: block;
+  margin: 0 0 10px auto;
+  padding: 0 0 0 2rem;
+  width: fit-content;
+  font-size: 2rem;
+  border-bottom: 1px solid #1f1f1f;
+}
+.main-user-list section .sort-button::before {
+  position: absolute;
+  top: 0.6rem;
+  left: 0;
+  content: "";
+  border-top: 17.32px solid #1f1f1f;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+.main-user-list section .user-list-item-data-name {
+  margin: 0 0 4px 0;
+  padding: 0 10px;
+  background-color: #1f1f1f;
+}
+.main-user-list section .user-list-item-data-name p {
+  width: 18%;
+  line-height: 1.6;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ffffff;
+}
+.main-user-list section .user-list-item-data-name p:first-child {
+  width: 28%;
+}
+.main-user-list section .user-list {
+  margin: 0 0 20px 0;
+}
+.main-user-list section .user-list .user-list-item {
+  margin: 0 0 4px 0;
+}
+.main-user-list section .user-list .user-list-item:last-child {
+  margin: 0;
+}
+.main-user-list section .user-list .user-list-item .user-list-item-data {
+  padding: 0 10px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+.main-user-list section .user-list .user-list-item .user-list-item-data p {
+  width: 18%;
+  line-height: 1.6;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #1f1f1f;
+}
+.main-user-list section .user-list .user-list-item .user-list-item-data p:first-child {
+  width: 28%;
+}
+.main-user-list section .page-number {
+  justify-content: center;
+}
+.main-user-list section .page-number .page-number-button-prev {
+  margin: 0 20px 0 0;
+  width: fit-content;
+  font-size: 1.6rem;
+  color: #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
+}
+.main-user-list section .page-number .page-number-list {
+  margin: 0 20px 0 0;
+  padding: 0 10px;
+}
+.main-user-list section .page-number .page-number-list .page-number-list-item {
+  margin: 0 10px 0 0;
+  width: fit-content;
+  font-size: 1.6rem;
+  color: #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
+}
+.main-user-list section .page-number .page-number-list .page-number-list-item:last-child {
+  margin: 0;
+}
+.main-user-list section .page-number .page-number-button-next {
+  width: fit-content;
+  font-size: 1.6rem;
+  color: #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.main-study-hours-edit {
+  background-color: #f0f0f0;
+}
+.main-study-hours-edit section h2 {
+  margin: 0 0 20px 0;
+}
+.main-study-hours-edit section .month-select-button {
+  position: relative;
+  display: block;
+  margin: 0 0 10px auto;
+  padding: 0 0 0 2rem;
+  width: fit-content;
+  font-size: 2rem;
+  border-bottom: 1px solid #1f1f1f;
+}
+.main-study-hours-edit section .month-select-button::before {
+  position: absolute;
+  top: 0.6rem;
+  left: 0;
+  content: "";
+  border-top: 17.32px solid #1f1f1f;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+.main-study-hours-edit section .study-hours-list-april {
+  margin: 0 0 40px;
+}
+.main-study-hours-edit section .study-hours-list-april .study-hours-list-box {
+  margin: 0 0 20px;
+}
+.main-study-hours-edit section .study-hours-list-april .study-hours-list-box .study-hours-list-item-name {
+  margin: 0 4px 0 0;
+  width: 14%;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.main-study-hours-edit section .study-hours-list-april .study-hours-list-box .study-hours-list-item-name .day-name {
+  color: #ffffff;
+  background-color: #1f1f1f;
+}
+.main-study-hours-edit section .study-hours-list-april .study-hours-list-box .study-hours-list-item-name .taeget-time-name,
+.main-study-hours-edit section .study-hours-list-april .study-hours-list-box .study-hours-list-item-name .execution-time-name {
+  color: #1f1f1f;
+  background-color: #ffffff;
+}
+.main-study-hours-edit section .study-hours-list-april .study-hours-list-box .study-hours-list-item-name .study-hours-edit-button-name {
+  padding: 0 0 4px;
+  color: #1f1f1f;
+  background-color: #ffffff;
+}
+.main-study-hours-edit section .study-hours-list-april .study-hours-list-box .study-hours-list {
+  width: calc(86% - 4px);
+  justify-content: left;
+}
+.main-study-hours-edit section .study-hours-list-april .study-hours-list-box .study-hours-list .study-hours-list-item {
+  margin: 0 4px 0 0;
+  width: calc((100% - 52px) / 14);
+  line-height: 1.6;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.main-study-hours-edit section .study-hours-list-april .study-hours-list-box .study-hours-list .study-hours-list-item:last-child {
+  margin: 0;
+}
+.main-study-hours-edit section .study-hours-list-april .study-hours-list-box .study-hours-list .study-hours-list-item .day {
+  color: #ffffff;
+  background-color: #1f1f1f;
+}
+.main-study-hours-edit section .study-hours-list-april .study-hours-list-box .study-hours-list .study-hours-list-item .taeget-time,
+.main-study-hours-edit section .study-hours-list-april .study-hours-list-box .study-hours-list .study-hours-list-item .execution-time {
+  color: #1f1f1f;
+  background-color: #ffffff;
+}
+.main-study-hours-edit section .study-hours-list-april .study-hours-list-box .study-hours-list .study-hours-list-item .study-hours-edit-button {
+  padding: 0 0 4px;
+  color: #1f1f1f;
+  background-color: #ffffff;
+}
+.main-study-hours-edit section .study-hours-list-april .study-hours-list-box .study-hours-list .study-hours-list-item .study-hours-edit-button a {
+  display: inline-block;
+  width: 90%;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  background-color: #FEA72A;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form {
+  padding: 0 0 40px;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box {
+  height: calc(100vh - 230px);
+  margin-bottom: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day1, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day2, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day4, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day5, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day6, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day7, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day8, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day9, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day10, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day11, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day12, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day13, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day14, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day15, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day16, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day17, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day18, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day19, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day20, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day21, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day22, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day23, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day24, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day25, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day26, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day27, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day28, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day29, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day30 {
+  margin: 0 0 40px;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day1 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day2 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day3 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day4 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day5 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day6 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day7 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day8 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day9 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day10 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day11 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day12 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day13 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day14 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day15 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day16 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day17 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day18 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day19 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day20 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day21 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day22 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day23 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day24 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day25 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day26 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day27 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day28 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day29 h3, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day30 h3 {
+  margin: 0 0 10px;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day1 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day2 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day3 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day4 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day5 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day6 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day7 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day8 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day9 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day10 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day11 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day12 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day13 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day14 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day15 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day16 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day17 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day18 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day19 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day20 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day21 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day22 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day23 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day24 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day25 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day26 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day27 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day28 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day29 .flex, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day30 .flex {
+  margin: 0 0 5px;
+  justify-content: left;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day1 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day2 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day3 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day4 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day5 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day6 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day7 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day8 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day9 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day10 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day11 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day12 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day13 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day14 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day15 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day16 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day17 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day18 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day19 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day20 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day21 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day22 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day23 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day24 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day25 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day26 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day27 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day28 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day29 .flex .target-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day30 .flex .target-time-item {
+  margin: 0 40px 0 0;
+  font-size: 1.8rem;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day1 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day2 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day3 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day4 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day5 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day6 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day7 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day8 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day9 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day10 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day11 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day12 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day13 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day14 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day15 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day16 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day17 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day18 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day19 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day20 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day21 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day22 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day23 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day24 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day25 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day26 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day27 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day28 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day29 .flex .target-time-item .target-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day30 .flex .target-time-item .target-time-label {
+  margin: 0 4px 0 0;
+  vertical-align: bottom;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day1 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day2 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day3 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day4 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day5 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day6 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day7 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day8 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day9 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day10 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day11 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day12 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day13 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day14 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day15 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day16 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day17 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day18 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day19 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day20 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day21 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day22 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day23 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day24 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day25 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day26 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day27 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day28 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day29 .flex .target-time-item .target-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day30 .flex .target-time-item .target-time-input {
+  width: 100px;
+  vertical-align: bottom;
+  text-align: center;
+  background-color: #ffffff;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day1 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day2 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day3 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day4 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day5 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day6 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day7 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day8 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day9 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day10 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day11 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day12 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day13 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day14 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day15 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day16 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day17 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day18 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day19 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day20 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day21 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day22 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day23 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day24 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day25 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day26 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day27 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day28 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day29 .flex .execution-time-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day30 .flex .execution-time-item {
+  font-size: 1.8rem;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day1 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day2 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day3 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day4 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day5 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day6 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day7 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day8 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day9 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day10 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day11 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day12 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day13 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day14 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day15 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day16 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day17 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day18 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day19 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day20 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day21 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day22 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day23 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day24 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day25 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day26 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day27 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day28 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day29 .flex .execution-time-item .execution-time-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day30 .flex .execution-time-item .execution-time-label {
+  margin: 0 4px 0 0;
+  vertical-align: bottom;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day1 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day2 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day3 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day4 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day5 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day6 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day7 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day8 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day9 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day10 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day11 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day12 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day13 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day14 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day15 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day16 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day17 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day18 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day19 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day20 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day21 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day22 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day23 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day24 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day25 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day26 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day27 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day28 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day29 .flex .execution-time-item .execution-time-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day30 .flex .execution-time-item .execution-time-input {
+  width: 100px;
+  vertical-align: bottom;
+  text-align: center;
+  background-color: #ffffff;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day1 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day2 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day3 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day4 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day5 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day6 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day7 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day8 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day9 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day10 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day11 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day12 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day13 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day14 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day15 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day16 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day17 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day18 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day19 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day20 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day21 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day22 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day23 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day24 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day25 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day26 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day27 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day28 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day29 .note-item, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day30 .note-item {
+  font-size: 1.8rem;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day1 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day2 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day3 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day4 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day5 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day6 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day7 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day8 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day9 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day10 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day11 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day12 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day13 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day14 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day15 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day16 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day17 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day18 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day19 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day20 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day21 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day22 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day23 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day24 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day25 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day26 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day27 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day28 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day29 .note-item .note-label, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day30 .note-item .note-label {
+  display: block;
+  margin: 0 0 4px;
+  width: fit-content;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day1 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day2 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day3 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day4 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day5 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day6 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day7 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day8 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day9 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day10 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day11 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day12 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day13 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day14 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day15 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day16 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day17 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day18 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day19 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day20 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day21 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day22 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day23 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day24 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day25 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day26 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day27 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day28 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day29 .note-item .note-input, .main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .study-hours-edit-april-box #study-hours-edit-april-box-day30 .note-item .note-input {
+  width: 100%;
+  vertical-align: bottom;
+  background-color: #ffffff;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .form-button-item {
+  justify-content: center;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .form-button-item .form-button-reset {
+  margin: 0 40px 0 0;
+  padding: 0 20px;
+  line-height: 1.8;
+  font-size: 1.6rem;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #b0b0b0;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .form-button-item .form-button-return {
+  margin: 0 40px 0 0;
+  padding: 0 20px;
+  line-height: 1.8;
+  font-size: 1.6rem;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #b0b0b0;
+}
+.main-study-hours-edit section .study-hours-edit-april .study-hours-edit-april-form .form-button-item .form-button-submit {
+  margin: 0;
+  padding: 0 20px;
+  line-height: 1.8;
+  font-size: 1.6rem;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #075577;
+}
+
+/*mainの記述終了*/
+/*footerの記述開始*/
+footer {
+  height: 80px;
+  background-color: #1f1f1f;
+}
+footer .copyright {
+  text-align: center;
+  line-height: 8rem;
+}
+footer small {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+/*footerの記述終了*/
+/* 
+@media(hover: hover){
+}
+@media screen and (max-width: px) {
+} 
+*//*# sourceMappingURL=style.css.map */
