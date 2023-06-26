@@ -3,7 +3,9 @@ package com.example.demo.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import com.example.demo.entity.UserEditEntity;
 import com.example.demo.service.UserEditService;
@@ -26,9 +28,9 @@ public class UserEditController{
 		return "/users/{id}edit";
 	}
 
-	/*@PostMapping("/users/{id}edit")
+	@PostMapping("/users/{id}edit")
 	public String displayEdit(@PathVariable("id") Long id, @ModelAttribute("users")UserEditEntity users, Model model){
-		userEditService.updateUsers(users);
+		userEditService.updateUsers(id);
 		UserEditEntity updatedUser = userEditService.getUsersById(id);
 		model.addAttribute("users"updatedUsers);
 		//更新後のページにリダイレクト

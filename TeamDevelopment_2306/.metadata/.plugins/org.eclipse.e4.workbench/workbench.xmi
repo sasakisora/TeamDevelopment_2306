@@ -367,24 +367,24 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:Debug</tags>
-      <menus xmi:id="_gFfYoBNWEe6OVczUQTdzBA" elementId="menu:org.eclipse.debug.ui.launchView">
+      <menus xmi:id="_61j64BPwEe6lM4D86eLivA" elementId="menu:org.eclipse.debug.ui.launchView">
         <tags>ViewMenu</tags>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_gFfYoRNWEe6OVczUQTdzBA" label="&#x30ea;&#x30d5;&#x30ec;&#x30c3;&#x30b7;&#x30e5;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/refresh.png"/>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_gFfYohNWEe6OVczUQTdzBA"/>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_gFfYoxNWEe6OVczUQTdzBA" label="&#x3059;&#x3079;&#x3066;&#x7d42;&#x4e86;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/terminate_all_co.png"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_61j64RPwEe6lM4D86eLivA" label="&#x30ea;&#x30d5;&#x30ec;&#x30c3;&#x30b7;&#x30e5;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/refresh.png"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_61j64hPwEe6lM4D86eLivA"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_61j64xPwEe6lM4D86eLivA" label="&#x3059;&#x3079;&#x3066;&#x7d42;&#x4e86;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/terminate_all_co.png"/>
       </menus>
-      <menus xsi:type="menu:PopupMenu" xmi:id="_gFgmwBNWEe6OVczUQTdzBA" elementId="LaunchViewContextMenu">
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_gFgmwRNWEe6OVczUQTdzBA" label="&#x5b9f;&#x884c;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/run_exc.png"/>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_gFgmwhNWEe6OVczUQTdzBA" label="&#x30c7;&#x30d0;&#x30c3;&#x30b0;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/debug_exc.png"/>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_gFgmwxNWEe6OVczUQTdzBA" label="&#x30ab;&#x30d0;&#x30ec;&#x30c3;&#x30b8;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/coverage.png"/>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_gFgmxBNWEe6OVczUQTdzBA" label="&#x30d7;&#x30ed;&#x30d5;&#x30a1;&#x30a4;&#x30eb;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/profile_exc.png"/>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_gFgmxRNWEe6OVczUQTdzBA"/>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_gFgmxhNWEe6OVczUQTdzBA" label="&#x7d42;&#x4e86; &amp;&amp; &#x518d;&#x8d77;&#x52d5;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/term_restart.png" enabled="false"/>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_gFgmxxNWEe6OVczUQTdzBA" label="&#x7d42;&#x4e86;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/terminate_co.png" enabled="false"/>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_gFgmyBNWEe6OVczUQTdzBA"/>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_gFgmyRNWEe6OVczUQTdzBA" label="&#x7de8;&#x96c6;..." iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/edit_template.png"/>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_gFgmyhNWEe6OVczUQTdzBA"/>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_gFgmyxNWEe6OVczUQTdzBA" label="&#x524a;&#x9664;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/delete_exc.png" tooltip="Deletes the selected launch configuration"/>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_61mXIBPwEe6lM4D86eLivA" elementId="LaunchViewContextMenu">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_61mXIRPwEe6lM4D86eLivA" label="&#x5b9f;&#x884c;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/run_exc.png"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_61mXIhPwEe6lM4D86eLivA" label="&#x30c7;&#x30d0;&#x30c3;&#x30b0;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/debug_exc.png"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_61mXIxPwEe6lM4D86eLivA" label="&#x30ab;&#x30d0;&#x30ec;&#x30c3;&#x30b8;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/coverage.png"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_61mXJBPwEe6lM4D86eLivA" label="&#x30d7;&#x30ed;&#x30d5;&#x30a1;&#x30a4;&#x30eb;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/profile_exc.png"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_61mXJRPwEe6lM4D86eLivA"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_61mXJhPwEe6lM4D86eLivA" label="&#x7d42;&#x4e86; &amp;&amp; &#x518d;&#x8d77;&#x52d5;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/term_restart.png" enabled="false"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_61mXJxPwEe6lM4D86eLivA" label="&#x7d42;&#x4e86;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/terminate_co.png" enabled="false"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_61mXKBPwEe6lM4D86eLivA"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_61mXKRPwEe6lM4D86eLivA" label="&#x7de8;&#x96c6;..." iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/edit_template.png"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_61mXKhPwEe6lM4D86eLivA"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_61mXKxPwEe6lM4D86eLivA" label="&#x524a;&#x9664;" iconURI="platform:/plugin/org.eclipse.debug.ui.launchview/icons/delete_exc.png" tooltip="Deletes the selected launch configuration"/>
       </menus>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_cwnfdBMSEe6pS8Yf18c6fQ" elementId="org.eclipse.buildship.ui.views.taskview" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Gradle &#x30bf;&#x30b9;&#x30af;" iconURI="platform:/plugin/org.eclipse.buildship.ui/icons/full/eview16/tasks_view.png" tooltip="" closeable="true">
@@ -418,7 +418,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_cthvMBMSEe6pS8Yf18c6fQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_f6Ey0BNWEe6OVczUQTdzBA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="&#x5370;&#x5237;" command="_cLyUaxMSEe6pS8Yf18c6fQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6kfZABPwEe6lM4D86eLivA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="&#x5370;&#x5237;" command="_cLyUaxMSEe6pS8Yf18c6fQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_cthvMRMSEe6pS8Yf18c6fQ" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -452,7 +452,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ctiWQBMSEe6pS8Yf18c6fQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_f6HPEBNWEe6OVczUQTdzBA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="&#x30a8;&#x30c7;&#x30a3;&#x30bf;&#x30fc;&#x306e;&#x30d4;&#x30f3;&#x7559;&#x3081;" type="Check" command="_cLxtdRMSEe6pS8Yf18c6fQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6kjqcBPwEe6lM4D86eLivA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="&#x30a8;&#x30c7;&#x30a3;&#x30bf;&#x30fc;&#x306e;&#x30d4;&#x30f3;&#x7559;&#x3081;" type="Check" command="_cLxtdRMSEe6pS8Yf18c6fQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ctiWQRMSEe6pS8Yf18c6fQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1344,9 +1344,7 @@
     <bindings xmi:id="_cMs6IhMSEe6pS8Yf18c6fQ" keySequence="ALT+CR" command="_cLwfexMSEe6pS8Yf18c6fQ"/>
   </bindingTables>
   <bindingTables xmi:id="_cPxcMhMSEe6pS8Yf18c6fQ" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_cLG-rRMSEe6pS8Yf18c6fQ">
-    <bindings xmi:id="_fnbjoBNWEe6OVczUQTdzBA" keySequence="M1+W" command="_cPxcMBMSEe6pS8Yf18c6fQ">
-      <tags>deleted</tags>
-    </bindings>
+    <bindings xmi:id="_6EiGkBPwEe6lM4D86eLivA" keySequence="M1+W" command="_cPxcMBMSEe6pS8Yf18c6fQ"/>
   </bindingTables>
   <bindingTables xmi:id="_cwe8kRMSEe6pS8Yf18c6fQ" bindingContext="_cwe8kBMSEe6pS8Yf18c6fQ"/>
   <bindingTables xmi:id="_cwfjoRMSEe6pS8Yf18c6fQ" bindingContext="_cwfjoBMSEe6pS8Yf18c6fQ"/>
@@ -3490,7 +3488,7 @@
   <addons xmi:id="_cLG-thMSEe6pS8Yf18c6fQ" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_cLG-txMSEe6pS8Yf18c6fQ" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_cLMeMBMSEe6pS8Yf18c6fQ" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_6ENWcBPwEe6lM4D86eLivA" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <addons xmi:id="_cPvnABMSEe6pS8Yf18c6fQ" elementId="org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler"/>
   <categories xmi:id="_cLpxMBMSEe6pS8Yf18c6fQ" elementId="org.springframework.tooling.ls.eclipse.gotosymbol.commands.category" name="STS4"/>

@@ -30,8 +30,17 @@ public class UserEditService{
 	*ユーザー情報更新
 	*@param userユーザー情報
 	*/
-	
+	public UserEditEntity updateUsersById(Long id) {
+		UserEditEntity upUser = new UserEditEntity();
+		username(userEditEntity.getUserName())
+		email(userEditEntity.getUserName())
+		password(userEditEntity.getUserName())
+		password2(userEditEntity.getUserName())
 
+
+
+	}
+	
 	/**
 	*編集可能かチェック
 	*/
