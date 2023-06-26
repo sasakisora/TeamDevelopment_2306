@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/Users/kodam/LetsEngineer/curriculum/JavaStudy"/>
 			<item value="/Users/kodam/LetsEngineer/curriculum/TeamDevelopment_2306"/>
 			<item value="/Users/kodam/LetsEngineer/curriculum/TeamDevelopment_2306/TeamDevelopment_2306"/>
 		</list>

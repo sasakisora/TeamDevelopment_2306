@@ -11,11 +11,9 @@ import lombok.Data;
 /**
  * ユーザー情報 Entity
  */
-
+@Data
 @Entity
-@Table(name = "users");
-
-
+@Table(name = "users")
 public class UserEditEntity {
 
 	/**
@@ -42,12 +40,12 @@ public class UserEditEntity {
 	 * パスワード
 	 */
 	@Column(name = "password")
-	private int password;
+	private String password;
 
 	/**
 	 * パスワード確認用
 	 */
-	@Column(name = "passwprd2")
-	private int password2;
+	@Column(name = "password2")
+	private String password2;
 	
 }
