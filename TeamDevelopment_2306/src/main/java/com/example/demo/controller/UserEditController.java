@@ -25,16 +25,16 @@ public class UserEditController{
 	public String displayEdit(@PathVariable("id") Long id, Model model){
 		UserEditEntity users = userEditService.getUsersById(id);
 		model.addAttribute("users",users);
-		return "/users/{id}edit";
+		return "userEdit";
 	}
 
 	@PostMapping("/users/{id}edit")
 	public String displayEdit(@PathVariable("id") Long id, @ModelAttribute("users")UserEditEntity users, Model model){
-		userEditService.updateUsers(id);
+		userEditService.updateUsersById(id);
 		UserEditEntity updatedUser = userEditService.getUsersById(id);
-		model.addAttribute("users"updatedUsers);
+		model.addAttribute("users",updatedUser);
 		//更新後のページにリダイレクト
-		return "/users/{id}edit";
+		return "/users/edit";
 	}
 
 	/**
@@ -42,12 +42,12 @@ public class UserEditController{
 	 *@param model Model
 	 *@return ユーザー情報削除完了画面
 	 */
-	/*@GetMapping("/users/{id}delete")
+	@GetMapping("/users/{id}delete")
 	public String delete(@PathVariable Long id, Model model) {
 		//ユーザー情報の削除
 		userEditService.delete(id);
 		return "/users/{id}edit";
-	}*/
+	}
 }
 
 

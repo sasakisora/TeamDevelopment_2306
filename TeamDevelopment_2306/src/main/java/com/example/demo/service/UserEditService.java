@@ -30,15 +30,13 @@ public class UserEditService{
 	*ユーザー情報更新
 	*@param userユーザー情報
 	*/
-	public UserEditEntity updateUsersById(Long id) {
-		UserEditEntity upUser = new UserEditEntity();
-		username(userEditEntity.getUserName())
-		email(userEditEntity.getUserName())
-		password(userEditEntity.getUserName())
-		password2(userEditEntity.getUserName())
-
-
-
+	public UserEditEntity updateUsersById(Long id, UserEditEntity userEditEntity) {
+		UserEditEntity upUser = userEditRepository.getById(id);
+		upUser.setUserName(userEditEntity.getUserName());
+		upUser.setEmail(userEditEntity.getEmail());
+		upUser.setPassword(userEditEntity.getPassword());
+		upUser.setPassword2(userEditEntity.getPassword2());
+		return upUser;
 	}
 	
 	/**
@@ -49,9 +47,10 @@ public class UserEditService{
 	/**
 	*ユーザー情報削除
 	*/
-	/*public void delete(Long id) {
+	public void delete(Long id) {
 		Users users = findById(id);
 		userEditRepository.delete(users);
 	}
-*/
+
 }
+
