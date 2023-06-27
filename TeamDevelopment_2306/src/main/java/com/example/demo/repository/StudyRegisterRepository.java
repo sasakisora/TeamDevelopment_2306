@@ -7,4 +7,4 @@ import org.springframework.stereotype.Repository;
 *ユーザー情報　Repository
 */
 @Repository
-public interface UserEditRepository extends JpaRepository<User, Long> {}
+public interface StudyResisterRepository extends JpaRepository<User, Long> {}
