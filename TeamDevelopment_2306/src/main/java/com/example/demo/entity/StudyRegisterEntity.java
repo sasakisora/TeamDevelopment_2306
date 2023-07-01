@@ -43,13 +43,19 @@ public class StudyRegisterEntity {
 	/**
 	*目標時間
 	*/
-	@Column(name = "target_date")
+	@Column(name = "target_time")
 	private Time targetTime;
 
 	/**
 	*学習時間
 	*/
-	@Column(name = "study_date")
+	@Column(name = "study_time")
 	private Time studyTime;
+	
+	/**
+	 * 備考欄
+	*/
+	@Column(name = "remarks")
+	private String remarks;
 
 }
