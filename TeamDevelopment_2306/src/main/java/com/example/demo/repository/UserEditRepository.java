@@ -9,6 +9,7 @@ import com.example.demo.entity.UserEditEntity;
 *ユーザー情報　Repository
 */
 @Repository
-public interface UserEditRepository extends JpaRepository<UserEditEntity, Long>{
-	UserEditEntity getById(Long id);
+public interface UserEditRepository extends JpaRepository<UserEditEntity, Integer>{
+
+	
 }

@@ -22,15 +22,15 @@ public class UserEditService{
 	*ユーザー情報　検索
 	*return 検索結果
 	*/
-	public UserEditEntity getUsersById(Long id){
-		return userEditRepository.getById(id);
+	public UserEditEntity getUsersById(Integer id){
+		return userEditRepository.getOne(id);
 	}
 
 	/**
 	*ユーザー情報更新
 	*@param userユーザー情報
 	*/
-	public UserEditEntity updateUsersById(Long id, UserEditEntity userEditEntity) {
+	public UserEditEntity updateUsersById(Integer id, UserEditEntity userEditEntity) {
 		UserEditEntity upUser = userEditRepository.getById(id);
 		upUser.setUserName(userEditEntity.getUserName());
 		upUser.setEmail(userEditEntity.getEmail());
@@ -47,10 +47,10 @@ public class UserEditService{
 	/**
 	*ユーザー情報削除
 	*/
-	public void delete(Long id) {
+	/*public void delete(Long id) {
 		Users users = findById(id);
 		userEditRepository.delete(users);
 	}
-
+*/
 }
 
