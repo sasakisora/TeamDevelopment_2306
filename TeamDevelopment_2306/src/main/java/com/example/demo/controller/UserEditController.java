@@ -21,20 +21,14 @@ import com.example.demo.service.UserEditService;
 	 *@param model Model
 	 *@return ユーザー情報編集完了画面
 	 */
-	
-	@GetMapping("/")
-	public String index() {
-		return "common/index";
-	}
-	 
 	@GetMapping("/user/edit/{id}")
 	public String displayEdit(@PathVariable Integer id, Model model){
 		UserEditEntity user = userEditService.getUsersById(id);
 //		UserEditForm userEditForm =new UserEditForm();
-//		userEditForm.setid(user.getid());
-//		userEditForm.setusername(user.getusername());
-//		userEditForm.setuseremail(user.getuseremail());
-//		userEditForm.setuserpassword(user.getuserpassword());
+//		userEditForm.setId(user.getId());
+//		userEditForm.setUsername(user.getUserName());
+//		userEditForm.setEmail(user.getEmail());
+//		userEditForm.setPassword(user.getPassword());
 		model.addAttribute("user",user);
 		return "common/UserEdit";
 	}
