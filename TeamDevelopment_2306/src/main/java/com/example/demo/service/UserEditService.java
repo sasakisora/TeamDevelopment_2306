@@ -31,7 +31,7 @@ public class UserEditService{
 	*@param userユーザー情報
 	*/
 	public UserEditEntity updateUsersById(Integer id, UserEditEntity userEditEntity) {
-		UserEditEntity upUser = userEditRepository.getById(id);
+		UserEditEntity upUser = userEditRepository.findById(id);
 		upUser.setUserName(userEditEntity.getUserName());
 		upUser.setEmail(userEditEntity.getEmail());
 		upUser.setPassword(userEditEntity.getPassword());
@@ -47,10 +47,10 @@ public class UserEditService{
 	/**
 	*ユーザー情報削除
 	*/
-	/*public void delete(Long id) {
+	public void delete(Integer id) {
 		Users users = findById(id);
 		userEditRepository.delete(users);
 	}
-*/
+
 }
 

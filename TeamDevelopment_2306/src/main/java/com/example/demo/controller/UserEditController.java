@@ -24,11 +24,11 @@ import com.example.demo.service.UserEditService;
 	@GetMapping("/user/edit/{id}")
 	public String displayEdit(@PathVariable Integer id, Model model){
 		UserEditEntity user = userEditService.getUsersById(id);
-//		UserEditForm userEditForm =new UserEditForm();
-//		userEditForm.setId(user.getId());
-//		userEditForm.setUsername(user.getUserName());
-//		userEditForm.setEmail(user.getEmail());
-//		userEditForm.setPassword(user.getPassword());
+		UserEditForm userEditForm =new UserEditForm();
+		userEditForm.setId(user.getId());
+		userEditForm.setUsername(user.getUserName());
+		userEditForm.setEmail(user.getEmail());
+		userEditForm.setPassword(user.getPassword());
 		model.addAttribute("user",user);
 		return "common/UserEdit";
 	}
