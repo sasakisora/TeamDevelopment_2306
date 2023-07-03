@@ -9,4 +9,4 @@ import com.example.demo.entity.StudyRegisterEntity;
 *ユーザー情報　Repository
 */
 @Repository
-public interface StudyRegisterRepository extends JpaRepository<StudyRegisterEntity, Long> {}
+public interface StudyRegisterRepository extends JpaRepository<StudyRegisterEntity, Interger> {}
