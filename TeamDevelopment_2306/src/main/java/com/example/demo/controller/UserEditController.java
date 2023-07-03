@@ -11,6 +11,7 @@ import com.example.demo.service.UserEditService;
 
 	@Controller
 	public class UserEditController{
+		
 	@Autowired
 	private UserEditService userEditService;
 
@@ -20,6 +21,11 @@ import com.example.demo.service.UserEditService;
 	 *@param model Model
 	 *@return ユーザー情報編集完了画面
 	 */
+	
+	@GetMapping("/")
+	public String index() {
+		return "common/index";
+	}
 	 
 	@GetMapping("/user/edit/{id}")
 	public String displayEdit(@PathVariable Integer id, Model model){
