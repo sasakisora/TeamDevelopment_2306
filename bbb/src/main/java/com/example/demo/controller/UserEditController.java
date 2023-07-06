@@ -29,21 +29,20 @@ import com.example.demo.service.UserEditService;
 		UserEditEntity user = userEditService.getUsersById(id);
 		UserEditForm userEditForm =new UserEditForm();
 		userEditForm.setId(user.getId());
-		userEditForm.setUsername(user.getUserName());
+		userEditForm.setUsername(user.getUsername());
 		userEditForm.setEmail(user.getEmail());
 		userEditForm.setPassword(user.getPassword());
-		model.addAttribute("user",user);
+		model.addAttribute("userEditForm",userEditForm);
 		return "common/UserEdit";
 	}
 
 	@PostMapping("/user/update")
-	public String displayEdit(@PathVariable("id") Integer id, @ModelAttribute("users")UserEditEntity users, Model model){
+	public String displayEdit(@ModelAttribute UserEditForm userEditForm, Model model){
 //		if(result.hasErrors()) {
 //			return "";
 //		}
-		userEditService.getUsersById(id);
-		UserEditEntity updatedUser = userEditService.getUsersById(id);
-		model.addAttribute("users",updatedUser);
+		userEditService.updateUsersById(userEditForm);
+		model.addAttribute("userEditForm",userEditForm);
 		return "common/UserEditSuccess";//更新後のページにリダイレクト
 	}
 
@@ -58,6 +57,5 @@ import com.example.demo.service.UserEditService;
 //		return "common/UserEditDelete";
 //	}
 }
-
 
 

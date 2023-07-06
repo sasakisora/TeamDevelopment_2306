@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.UserEditEntity;
+import com.example.demo.form.UserEditForm;
 import com.example.demo.repository.UserEditRepository;
 
 
@@ -30,13 +31,13 @@ public class UserEditService{
 	*ユーザー情報更新
 	*@param userユーザー情報
 	*/
-	public UserEditEntity updateUsersById(Integer id, UserEditEntity userEditEntity) {
-		UserEditEntity upUser = userEditRepository.getById(id);
-		upUser.setUserName(userEditEntity.getUserName());
-		upUser.setEmail(userEditEntity.getEmail());
-		upUser.setPassword(userEditEntity.getPassword());
+	public void  updateUsersById(UserEditForm userEditForm) {
+		UserEditEntity upUser = getUsersById(userEditForm.getId());
+		upUser.setUsername(userEditForm.getUsername());
+		upUser.setEmail(userEditForm.getEmail());
+		upUser.setPassword(userEditForm.getPassword());
 //		upUser.setPassword2(userEditEntity.getPassword2());
-		return upUser;
+		userEditRepository.save(upUser);
 	}
 	
 	/**

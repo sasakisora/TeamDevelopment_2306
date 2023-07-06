@@ -5,13 +5,8 @@ import org.springframework.stereotype.Repository;
 
 import com.example.demo.entity.UserEditEntity;
 
-/**
-*ユーザー情報　Repository
-*/
 @Repository
 public interface UserEditRepository extends JpaRepository<UserEditEntity, Integer>{
 
-	UserEditEntity getById(Integer id);
 
-	
 }
