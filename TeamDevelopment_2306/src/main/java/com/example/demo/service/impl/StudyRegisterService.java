@@ -18,7 +18,6 @@ public class StudyRegisterService {
     studyRegister.setStudyDate(model.getStudyDate());// 現在の日付を設定
     studyRegister.setTargetTime(model.getTargetTime());// 目標時間を設定
     studyRegister.setStudyTime(model.getStudyTime());// 学習時間を設定
-    studyRegister.setRemarks(model.getRemarks());//備考欄を設定
     
     studyRegisterRepository.save(studyRegister);//データベースに登録
 	}

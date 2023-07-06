@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="StudyRegisterReset.css">
-    <link rel="stylesheet" href="StudyRegister.css">
+    <link rel="stylesheet" href="static/StudyRegister.css">
     <title>RSS</title> 
 </head>
 <body>
     <div class="wrap">
         <header class="flex">
-            <img class="logo" src="static/images/logo.png" width="50" height="50" alt="RSS">
+            <img class="logo" src="static/img/logo.png" width="50" height="50" alt="RSS">
             <h1>Road Study Scheduler</h1>
             <label class="header-menu-btn" for="header-menu-btn-check">
                 <div class="profile-button flex">
-                    <img class="user-icon" src="static/images/user.png" alt="userIcon">
+                    <img class="user-icon" src="img/user.png" alt="userIcon">
                     <p class="user-name">Yamada Taro</p>
                 </div>
             </label>
@@ -43,7 +42,7 @@
         <main>
             <div class="wrap-local">
                 <section>
-                    <form th:action="@{studyInput/register}" method="post" th:object="${}">
+                    <form th:action="@{studyInput/register}" method="post" th:object="${studyInput}">
                         <h2 th:text='学習時間登録'></h2>
                     
                             <div class="form-group">
