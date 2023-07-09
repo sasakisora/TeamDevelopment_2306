@@ -1,9 +1,12 @@
 package com.example.demo.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import lombok.Data;
 
 /**
@@ -18,15 +21,15 @@ public class UserEditEntity {
 	 * ID
 	 */
 	@Id
-//	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
-	private Long id;
+	private Integer id;
 
 	/**
 	 * 名前
 	 */
 	@Column(name = "username")
-	private String userName;
+	private String username;
 
 	/**
 	 * メールアドレス
@@ -39,11 +42,5 @@ public class UserEditEntity {
 	 */
 	@Column(name = "password")
 	private String password;
-
-	/**
-	 * パスワード確認用
-	 */
-	@Column(name = "password2")
-	private String password2;
-	
+		
 }
