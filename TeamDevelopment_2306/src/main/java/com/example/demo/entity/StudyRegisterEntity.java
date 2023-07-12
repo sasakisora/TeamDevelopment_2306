@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 import lombok.Data;
 
@@ -27,36 +28,34 @@ public class StudyRegisterEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
-	private Long id;
+	private Integer id;
 
 	/**
 	 * ユーザーID
 	 */
 	@Column(name = "user_id")
-	private String userId;
+	@NotNull(message="ユーザーIDを入力してください。")
+	private Integer user_id;
 
 	/**
 	*日付
 	*/
 	@Column(name = "study_date")
-	private Date studyDate;
+	@NotNull(message="日付を入力してください。")
+	private Date study_date;
 
 	/**
 	*目標時間
 	*/
 	@Column(name = "target_time")
-	private Time targetTime;
+	@NotNull(message="目標時間を入力してください。")
+	private Time target_time;
 
 	/**
 	*学習時間
 	*/
 	@Column(name = "study_time")
-	private Time studyTime;
-	
-//	/**
-//	 * 備考欄
-//	*/
-//	@Column(name = "remarks")
-//	private String remarks;
+	@NotNull(message="学習時間を入力してください。")
+	private Time study_time;
 
 }

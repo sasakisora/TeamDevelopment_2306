@@ -16,13 +16,13 @@ img {
 }
 .wrap-local {
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 30px 20px;
     max-width: 1300px;
     width: 90%;
 }
 
 h1  {
-    font-size: 30px;
+    font-size: 3.2rem;
     color: #ffffff;
 }
 
@@ -30,8 +30,9 @@ h1  {
 h2 {
     font-size: 2.4rem;
     font-weight: bold;
-    padding-top: 200px;
 }
+
+
 
 /*headerの記述開始*/
 header {
@@ -39,35 +40,35 @@ header {
     height: 80px;
     background-color: #075577;
     justify-content: left;
-  }
-  header .logo {
+}
+header .logo {
     margin-right: 10px;
     width: 50px;
     height: 50px;
-  }
-  header .header-menu-btn {
+}
+header .header-menu-btn {
     margin-left: auto;
-  }
-  header .header-menu-btn .profile-button {
+}
+header .header-menu-btn .profile-button {
     padding-bottom: 2px;
     border-bottom: 1px solid #ffffff;
-  }
-  header .header-menu-btn .profile-button .user-icon {
+}
+header .header-menu-btn .profile-button .user-icon {
     margin-right: 10px;
     width: 40px;
     height: 40px;
-  }
-  header .header-menu-btn .profile-button .user-name {
+}
+header .header-menu-btn .profile-button .user-name {
     color: #ffffff;
     font-size: 2rem;
-  }
-  header #header-menu-btn-check {
+}
+header #header-menu-btn-check {
     display: none;
-  }
-  header #header-menu-btn-check:checked ~ .header-menu {
+}
+header #header-menu-btn-check:checked ~ .header-menu {
     display: block;
-  }
-  header .header-menu {
+}
+header .header-menu {
     display: none;
     position: fixed;
     top: 70px;
@@ -77,11 +78,11 @@ header {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     border-radius: 4px;
     background-color: #ffffff;
-  }
-  header .header-menu ul {
+}
+header .header-menu ul {
     padding: 20px;
-  }
-  header .header-menu ul li a {
+}
+header .header-menu ul li a {
     display: block;
     width: 100%;
     line-height: 2;
@@ -90,11 +91,11 @@ header {
     text-align: center;
     border-bottom: 1px solid #1f1f1f;
     position: relative;
-  }
-  header .header-menu ul li:last-child {
+}
+header .header-menu ul li:last-child {
     text-align: center;
-  }
-  header .header-menu ul li:last-child a {
+}
+header .header-menu ul li:last-child a {
     display: inline-block;
     margin: 20px 10px 0;
     padding: 5px 20px;
@@ -103,7 +104,7 @@ header {
     border-bottom: 0px solid #1f1f1f;
     border-radius: 4px;
     background-color: #b0b0b0;
-  }
+}
 /*headerの記述終了*/
 
 
@@ -115,19 +116,72 @@ section {
     height: calc(768px - 60px - 80px);
 }
 
-
-.h2{
-    width: 500px;
-}
-
-section p{
-    width: 500px;
-    text-align: center;
-    line-height: 80px;
-    color: #ffffff;
-    background-color: #075577;
+form{
+    width: 300px;
+    display: block;
     margin: auto;
+    padding-top: 100px;
 }
+
+h2 {
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.checkbox1{
+    text-align: center;
+}
+.checkbox2{
+    text-align: center;
+    margin-top: 3px;
+}
+
+.button-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 3px;
+    width: 60%;
+    height: 50px;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    width: 65%;
+    text-align: left;
+    margin-bottom: 20px;
+    height: 25px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+
+input[type=button], input[type=submit] {
+    background-color: #0c5474;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+}
+
+
 
 /*mainの記述終了*/
 

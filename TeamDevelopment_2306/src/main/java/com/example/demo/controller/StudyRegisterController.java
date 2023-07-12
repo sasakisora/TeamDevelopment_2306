@@ -1,13 +1,22 @@
 package com.example.demo.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.example.demo.entity.StudyRegisterEntity;
+import com.example.demo.form.StudyRegisterForm;
 import com.example.demo.service.impl.StudyRegisterService;
 
+@Controller
 public class StudyRegisterController {
 	
 	@Autowired
@@ -16,31 +25,41 @@ public class StudyRegisterController {
 	/*
 	 *学習時間登録画面を表示
 	 *@param model Model
-	 *@return 登録完了画面画面のHTML
+	 *@return 学習時間登録画面
 	 */
-	@GetMapping("/studyInput/{id}register")
-	public String displayRegister() {
+	@GetMapping("/study/register")
+	public String displayRegister(Model model) {
+		model.addAttribute("studyRegisterForm",new StudyRegisterForm());
 	    return "common/StudyRegister";
 	}
 	
 	/*
 	 * 学習時間の登録
 	 * @param model Model
-	 * return ？？
+	 * return 学習時間登録完了画面を表示
 	 */
-    @PostMapping("/studyInput/{id}register")
-    public String registerStudyTime(@ModelAttribute("studyRegister") StudyRegisterEntity studyRegister) {
-    studyRegisterService.registerStudyTime(studyRegister);
-    return "redirect:/common/StudySuccess";
+    @PostMapping("/study/register2")
+    public String register(@Validated @ModelAttribute StudyRegisterForm studyRegisterForm, BindingResult result, Model model) {
+    	if (result.hasErrors()) {
+    	      // 入力チェックエラーの場合
+    	      List<String> errorList = new ArrayList<String>();
+    	      for (ObjectError error : result.getAllErrors()) {
+    	        errorList.add(error.getDefaultMessage());
+    	      }
+    	      model.addAttribute("validationError", errorList);
+    	      return "/common/StudyRegister";
+    	    }
+    studyRegisterService.register(studyRegisterForm);
+    return "/common/StudyRegister";
     }
     
     /*
      * 登録完了画面を表示
      * @param model Model
-     * return ？？
+     * return 学習時間登録完了画面を表示
      */
-    @GetMapping("/study/success")
-    public String displaySuccess() {
+    @PostMapping("/study/success")
+    public String displayView(Model model) {
     	return "common/StudySuccess";
     }
     

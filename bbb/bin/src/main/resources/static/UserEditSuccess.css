@@ -22,7 +22,7 @@ img {
 }
 
 h1  {
-    font-size: 30px;
+    font-size: 3.2rem;
     color: #ffffff;
 }
 
@@ -114,7 +114,6 @@ main {
 section {
     height: calc(768px - 60px - 80px);
 }
-
 
 .h2{
     width: 500px;
