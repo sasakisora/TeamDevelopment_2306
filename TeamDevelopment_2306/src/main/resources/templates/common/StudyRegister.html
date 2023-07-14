@@ -42,7 +42,7 @@
         <main>
             <div class="wrap-local">
                 <section>
-                    <form th:action="@{/study/success}" th:method="post" th:object="${studyRegisterForm}">
+                    <form th:action="@{/study/register2}" th:method="post" th:object="${studyRegisterForm}">
                         <h2 th:text='学習時間登録'></h2>
                     
                             <div class="form-group">
@@ -52,28 +52,25 @@
                     
                             <div class="form-group">
                                 <label for="study_date">日付</label>
-                                <input type="text" id="study_date" name="study_date" placeholder="yyyy/MM/dd" th:field="*{study_date}" th:value="${study_date}">
+                                <input type="date" id="study_date" name="study_date" placeholder="yyyy-MM-dd" th:field="*{study_date}" th:value="${study_date}">
                             </div>
                     
                             <div class="form-group">
                                 <label for="target_time">目標時間</label>
-                                <input type="text" id="target_time" name="time" placeholder="00:00" th:field="*{target_time}" th:value="${target_time}">
+                                <input type="time" id="target_time" name="time" placeholder="00:00:00" th:field="*{target_time}" th:value="${target_time}">
                             </div>
                     
                             <div class="form-group">
                                 <label for="study_time">学習時間</label>
-                                <input type="text" id="study_time" name="study_time" placeholder="00:00" th:field="*{study_time}" th:value="${study_time}">
+                                <input type="time" id="study_time" name="study_time" placeholder="00:00:00" th:field="*{study_time}" th:value="${study_time}">
+                            </div>
+                           <div>
+							   <input type="submit" onclick="javascript:history.back();" value="戻る" style="margin-right: 0%;">
+                            <input type="submit" value="登録">
                             </div>
                     </form>
  
-                            <div class="button-group">
-                                <form th:action="@{/study/register}" th:method="post" th:object="${studyRegisterForm}">
-                                   <input type="button" onclick="javascript:history.back();" value="戻る" style="margin-right: 0%;">
-                                </form>
-                                <form th:action="@{/study/success}" th:method="post" th:object="${studyRegisterForm}">
-                                <input type="submit" th:field="*{id}" name="id" value="登録">
-                                </form>
-                            </div>
+                
                     
                 </section>
             </div>

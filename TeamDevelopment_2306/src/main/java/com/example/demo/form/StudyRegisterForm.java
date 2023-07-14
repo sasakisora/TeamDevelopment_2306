@@ -1,14 +1,13 @@
 package com.example.demo.form;
 
 import java.sql.Date;
-import java.sql.Time;
 
 public class StudyRegisterForm {
 		private Integer id;
 	    private Integer user_id;
 	    private Date study_date;
-	    private Time target_time;
-	    private Time study_time;
+	    private String target_time;//time→String型
+	    private String study_time;//time→String型
 	    
 	 // コンストラクタ、ゲッター、セッターなどのメソッド
 
@@ -37,19 +36,19 @@ public class StudyRegisterForm {
 	        this.study_date = study_date;
 	    }
 
-	    public Time getTarget_time() {
-	        return target_time;
+	    public String getTarget_time() {
+	        return target_time;//
 	    }
 
-	    public void setTarget_time(Time target_time) {
+	    public void setTarget_time(String target_time) {
 	        this.target_time = target_time;
 	    }
 	    
-	    public Time getStudy_time() {
+	    public String getStudy_time() {
 	        return study_time;
 	    }
 
-	    public void setStudy_time(Time study_time) {
+	    public void setStudy_time(String study_time) {
 	        this.study_time = study_time;
 	    }
 }
