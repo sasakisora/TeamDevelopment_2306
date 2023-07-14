@@ -23,9 +23,11 @@
         <div class="base1">
             <h1>ログイン</h1>
             <div class="items">
+				<form th:action="@{/login}" th:object="${loginForm}" method="post">
                 <input text="text" name="E-mail" value="E-mail" size="40" class="login-items">
                 <input text="text" name="password" value="password" size="40" class="login-items2">
                 <input type="submit" value="ログイン" class="login-btn">
+                </form>
                 <p class="new-btn"><a href="logout.html">新規登録の方はこちら</a></p>
             </div>
         </div>
