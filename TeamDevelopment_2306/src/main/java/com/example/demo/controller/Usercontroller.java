@@ -5,9 +5,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.service.AuthService;
+
 @RestController
 @RequestMapping("/user")
-public class UserController {
+public class Usercontroller {
 
     @Autowired
     private AuthService authService;
