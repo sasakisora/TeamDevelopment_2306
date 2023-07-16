@@ -31,10 +31,10 @@ public class LoginRepository {
         String query = "";
         query += "SELECT * ";
         query += "FROM users ";
-        query += "WHERE email = :userEmail "; //setParameterで引数の値を代入できるようにNamedParameterを利用
+        query += "WHERE email = :Email "; //setParameterで引数の値を代入できるようにNamedParameterを利用
         
         //EntityManagerで取得された結果はオブジェクトとなるので、LoginUser型へキャストが必要となる
-        return (LoginUserEntity)em.createNativeQuery(query, LoginUserEntity.class).setParameter("userEmail", email)
+        return (LoginUserEntity)em.createNativeQuery(query, LoginUserEntity.class).setParameter("Email", email)
                 .getSingleResult();
     }
 

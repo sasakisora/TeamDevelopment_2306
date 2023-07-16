@@ -24,13 +24,13 @@ public class UserService implements UserDetailsService{
     private LoginRepository LoginRepositry ;
 
     @Override
-    public UserDetails loadUserByUsername(String userEmail) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String Email) throws UsernameNotFoundException {
 
-    	LoginUserEntity user = LoginRepositry.findUser(userEmail);
+    	LoginUserEntity user = LoginRepositry.findUser(Email);
 
         
         if (user == null) {
-            throw new UsernameNotFoundException("User" + userEmail + "was not found in the database");
+            throw new UsernameNotFoundException("User" + Email + "was not found in the database");
         }
         //権限のリスト
         //AdminやUserなどが存在するが、今回は利用しないのでUSERのみを仮で設定

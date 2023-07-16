@@ -4,13 +4,7 @@
 <meta charset="UTF-8">
 <title>login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@800&family=Noto+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
     <header>
@@ -23,9 +17,9 @@
         <div class="base1">
             <h1>ログイン</h1>
             <div class="items">
-				<form th:action="@{/login}" th:object="${loginForm}" method="post">
-                <input text="text" name="E-mail" value="E-mail" size="40" class="login-items">
-                <input text="text" name="password" value="password" size="40" class="login-items2">
+				<form th:action="@{/StudySuccess}" method="post">
+                <input text="text" name="email" id="email" size="40" class="login-items">
+                <input text="text" name="password"  id="password" size="40" class="login-items2" >
                 <input type="submit" value="ログイン" class="login-btn">
                 </form>
                 <p class="new-btn"><a href="logout.html">新規登録の方はこちら</a></p>

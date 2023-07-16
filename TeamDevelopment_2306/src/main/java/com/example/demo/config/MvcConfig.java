@@ -14,11 +14,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class MvcConfig implements WebMvcConfigurer {
     
     /**
-     * 「/login」というURLからlogin.htmlを呼び出す
+     * 「/login」というURLからindex.htmlを呼び出す
      */
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/login").setViewName("login");
-        registry.addViewController("/hello").setViewName("hello");
+        registry.addViewController("/login").setViewName("index");
+        registry.addViewController("/StudySuccess").setViewName("StudySuccess");
     }
 
 }

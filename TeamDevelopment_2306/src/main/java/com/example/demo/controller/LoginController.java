@@ -20,12 +20,12 @@ public class LoginController {
 	 * @param model リクエストスコープ上にオブジェクトを載せるためのmap
 	 * @return helloページのViewName
 	 */
-	@RequestMapping("/hello")
+	@RequestMapping("/StudySuccess")
 	private String init(Model model) {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		//Principalからログインユーザの情報を取得
-		String userEmail = auth.getName();
-		model.addAttribute("user", userEmail);
-		return "hello";
+		String Email = auth.getName();
+		model.addAttribute("user", Email);
+		return "StudySuccess";
 	}
 }
