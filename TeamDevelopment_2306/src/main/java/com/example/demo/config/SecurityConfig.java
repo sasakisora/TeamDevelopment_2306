@@ -9,6 +9,7 @@ import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import com.example.demo.service.impl.UserService;
 
@@ -70,6 +71,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		        .logoutUrl("/logout")
 		        .logoutSuccessUrl("/login?logout")
 		        .permitAll();
+		
+		
+		http
+        .logout()
+        .logoutRequestMatcher(new AntPathRequestMatcher("/logout")) //
+        .logoutUrl("/logout") //ログアウトのURL
+        .logoutSuccessUrl("/login"); //ログアウト成功後のURL
+
+		//CSRF対策を無効に設定（一時的）
+		http.csrf().disable();
 	}
 	
 	/**
@@ -87,5 +98,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		        .withUser("user").password("{noop}password").roles("USER");
 		*/
 	}
+	
 
 }

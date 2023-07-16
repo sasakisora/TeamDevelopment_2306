@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>logout</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="../static/logout.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@800&family=Noto+Sans:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <header class="flex">
+            <img class="logo" src="images/logo.png" width="1001px" height="1001px" alt="RSSのロゴマーク">
+                <h1>Road Study Scheduler</h1>
+            <label class="header-menu-btn" for="header-menu-btn-check">
+                <div class="profile-button flex">
+                    <img class="user-icon" src="images/user-icon.png" width ="1001px" height="1001px" alt="ユーザーアイコン">
+                    <p class="user-name">YAMADA TARO</p>
+                </div>
+            </label>
+            <input type="checkbox" id="header-menu-btn-check">
+            <nav class="header-menu">
+                <ul>
+                    <li><a>ユーザー編集・削除</a></li>
+                    <li><a>ユーザー一覧</a></li>
+                    <li><a>学習時間登録</a></li>
+                    <li><a>学習時間登録編集・削除</a></li>
+                    <li><a>ログアウト</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="base2">
+                <h2>ログアウトしますか？</h2>
+            </div>
+            <div class="switch">
+               <input type="submit" value="はい" class="switch1"> 
+               <input type="submit" value="いいえ" class="switch2">
+            </div>
+        </main>
+        <footer>
+            <p class="copyright">
+                <small>&copy; HOGEHOGE All Rights Reserved</small>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
