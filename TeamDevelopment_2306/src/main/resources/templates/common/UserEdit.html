@@ -15,7 +15,7 @@
             <label class="header-menu-btn" for="header-menu-btn-check">
                 <div class="profile-button flex">
                     <img class="user-icon" th:src="@{/img/userIcon.png}" alt="userIcon">
-                    <p class="user-name">YamadaTaro</p>
+                   
                 </div>
             </label>
             <input type="checkbox" id="header-menu-btn-check">
@@ -38,7 +38,7 @@
                     </li>
                 </ul>
             </nav>
-        </header>
+         </header>
         <main>
             <div class="wrap-local">
                 <section>
@@ -65,20 +65,16 @@
                         </div>
                 
                         </div>
-                        <div class="checkbox2">
-                            <input type="checkbox" name="delete" value="ok">
-                            ユーザー情報を削除します
-                        </div>
         			
                         <div class="button-group">
-                          <!--  <input type="button" value="戻る" style="margin-right: 10px;">-->
-                            <input type="submit" value="保存" style="margin-left: 40%;">
+                            <input type="submit" value="保存" style="margin-left:30px;">
                         </div>
+                        
                     </form>
                     <div class="button-group2">
                     <form th:action="@{/user/delete}" th:method="post" th:object="${userEditForm}">
 						<input type="hidden" th:field="*{id}" name="id">
-						<input type="submit" value="削除">
+						<input type="submit" value="削除" style="margin-bottom: 30px;">
 					</form>
 					</div>
                     
