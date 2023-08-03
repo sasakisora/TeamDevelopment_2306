@@ -17,7 +17,7 @@ header{
 }
 
 body{
-    background-image: url(../images/background.png);
+    background-image: url(../../../templates/images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -67,7 +67,6 @@ main{
 .items{
     display: flex;
     flex-direction: column;
-    width: 80%;
     margin: 0px auto;
 }
 
@@ -85,6 +84,7 @@ h1{
     text-align: center;
     border-color: #ffffff;
     font-size: 1.1em;
+    width: 80%;
 }
 
 .login-items2{
@@ -96,6 +96,7 @@ h1{
     text-align: center;
     border-color: #fea72a;
     font-size: 1.1em;
+    width: 80%;
 }
 
 .new-btn{
@@ -121,4 +122,5 @@ a{
     font-size: 1.1em;
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
+    width: 86%;
 }

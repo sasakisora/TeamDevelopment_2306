@@ -1,23 +1,14 @@
-<!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-	
-<html lang="ja">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8">
 <title>login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link th:href="@{common/style.css}" rel="stylesheet"></link>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@800&family=Noto+Sans:wght@800&display=swap" rel="stylesheet">
-</head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" th:href="@{css/common/style.css}" ></link>
 <body>
     <header>
         <div class="logo-text">
-            <img class="logo" th:src="@{images/LOGO.png}" width="1001px" height="1001px" alt="RSSのロゴマーク">
+            <img class="logo" th:src="@{/images/logo.png}" width="1001px" height="1001px" alt="RSSのロゴマーク">
             <p class="logo-p">Road Study Scheduler</p>
         </div>
     </header>
@@ -34,8 +25,6 @@
             </div>
         </div>
     </main>
-    <footer>
-
-    </footer>
 </body>
+
 </html>
